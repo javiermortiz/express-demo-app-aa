@@ -1,0 +1,24 @@
+append head 
+    link(rel="stylesheet" href="stylesheets/navbar.css")
+
+.navbar
+    .navbar_container
+        .navbar_logo
+            a(href='/')
+                img(src='/images/logo.png')
+        ul.navbar_list
+            a(href='/home')
+                li Home
+            a(href='/mybooks')
+                li My Books 
+            a(href='/browse')
+                li Browse
+            a(href='/community')
+                li Community
+        .navbar_search
+            input(type='search' placeholder='Search books')
+        .navbar_user
+            a(href='/')
+                img(src='/images/user.jpg')
+        
+

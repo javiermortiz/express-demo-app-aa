@@ -1,0 +1,18 @@
+extends layout
+
+append head
+  //- add page specific styles by appending to the head
+  link(rel="stylesheet" href="/stylesheets/index.css")
+  //- add page specific js
+  script(src="/javascripts/index.js" type="module" defer)
+
+block content
+  .albums_container
+    .album
+      each album in albums
+        ul.album_list
+          li= album.title
+          li= album.artist
+          li= album.year
+          li= album.description
+  
